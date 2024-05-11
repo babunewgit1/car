@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
 
     // Change this email address to your own
-    $to = 'mahmudul87647@gmail.com';
+    $to = 'info@radescar.com';
 
     $email_subject = "New Message from $name";
     $email_body = "You have received a new message from the user $name.\n" .
