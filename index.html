@@ -10,13 +10,43 @@
     />
     <meta name="keywords" content="" />
     <meta name="decription" content="" />
-    <meta name="author" content="Mahmudul Hasan" />
+    <meta property="og:title" content="Radescar - Automotive Services" />
+    <meta
+      name="description"
+      content="Radescar.com offers a wide range of automotive services including hitch installation, lighting system upgrades, suspension upgrades, exhaust system customization, performance tuning, off-road modifications, brake upgrades, custom wheel and tire installation, interior customizations, engine swaps, and custom interior lighting installation. Contact us for expert automotive solutions."
+    />
+    <meta
+      name="keywords"
+      content="Hitch Installation, Lighting System Upgrades, Suspension Upgrades, Exhaust System Customization, Performance Tuning, Off-Road Modifications, Brake Upgrades, Custom Wheel and Tire Installation, Interior Customizations, Engine Swaps, Custom Interior Lighting Installation"
+    />
+    <meta name="classification" content="Automotive Services" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Radescar - Automotive Services" />
+    <meta
+      property="og:description"
+      content="Radescar.com offers a wide range of automotive services including hitch installation, lighting system upgrades, suspension upgrades, exhaust system customization, performance tuning, off-road modifications, brake upgrades, custom wheel and tire installation, interior customizations, engine swaps, and custom interior lighting installation. Contact us for expert automotive solutions."
+    />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="geo.placename" content="Collier Country, Florida" />
+    <meta name="geo.country" content="US" />
+    <meta name="state" content="FL" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta
+      property="og:image"
+      content="https://www.radescar.com/image/ssm.jpg"
+    />
+    <meta property="og:url" content="https://www.radescar.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <link
+      rel="icon"
+      href="https://www.radescar.com/favicon.ico"
+      type="image/icon"
+    />
 
     <!-- Title -->
     <title>Welcome</title>
-
-    <!-- Fav Icon -->
-    <link rel="icon" href="img/fav.png" />
 
     <!-- Include Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -43,7 +73,7 @@
 
     <div class="main">
       <!-- header area start -->
-      <section id="header">
+      <section id="header" class="d-none d-lg-block">
         <div class="container">
           <div class="header_wrapper">
             <div class="logo">
@@ -65,6 +95,28 @@
         </div>
       </section>
       <!-- header area end -->
+
+      <!-- mb_header area start -->
+      <section id="mb_header" class="d-block d-lg-none">
+        <div class="container">
+          <div class="mb_header_wrapper">
+            <div class="mb_logo">
+              <a href="index.html">
+                <img src="img/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="number">
+              <a href="tel:(786) 290-3416">(786) 290-3416</a>
+            </div>
+            <div class="bar dbar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- mb_header area end -->
 
       <!-- hero area start -->
       <section id="hero">
@@ -127,18 +179,19 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
             <div class="contact_right">
               <h4>Contact us today</h4>
-              <form action="">
+              <form action="submit_form.php" method="post">
                 <div class="contact_right_form">
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
-                  <input type="text" placeholder="Subject" />
-                  <textarea placeholder="Message"></textarea>
+                  <input type="text" name="name" placeholder="Name" />
+                  <input type="email" name="email" placeholder="Email" />
+                  <input type="text" name="subject" placeholder="Subject" />
+                  <textarea name="message" placeholder="Message"></textarea>
                   <div class="submit">
-                    <button type="submit">SEND</button>
+                    <button type="submit" name="submit">SEND</button>
                     <button type="reset">Reset</button>
                   </div>
                 </div>
@@ -226,13 +279,23 @@
                 <p>Follow RADESCAR on Social Media:</p>
                 <ul>
                   <li>
-                    <a href="#"><img src="img/fb.svg" alt="" /></a>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/radescar.mobile.auto.repair"
+                      ><img src="img/fb.svg" alt=""
+                    /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="img/ig.svg" alt="" /></a>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/radescar_services"
+                      ><img src="img/ig.svg" alt=""
+                    /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="img/web.svg" alt="" /></a>
+                    <a target="_blank" href="https://www.radescar.com"
+                      ><img src="img/web.svg" alt=""
+                    /></a>
                   </li>
                 </ul>
                 <p>
@@ -246,6 +309,26 @@
     </section>
     <!-- popservice area end -->
 
+    <div class="menu_item_mb">
+      <div class="container">
+        <div class="menu_item_wrapper">
+          <div class="bar mbar">
+            <div class="cross">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="menu_item_wrapper">
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Main jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
@@ -257,19 +340,40 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Custom jQuery -->
-    <script src="js/scripts.js"></script>
-
-    <!-- Scroll-Top button -->
-    <a href="#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
-
     <script>
       var swiper = new Swiper(".mySwiper", {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        pagination: {
+          el: ".swiper-pagination",
+        },
       });
+    </script>
+
+    <script>
+      $(".dbar").click(function () {
+        $(".menu_item_mb").animate({
+          left: 0,
+        });
+      });
+
+      $(".mbar").click(function () {
+        $(".menu_item_mb").animate({
+          left: "-100%",
+        });
+      });
+    </script>
+
+    <script>
+      window.onload = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const success = urlParams.get("success");
+        if (success === "1") {
+          alert("Form submitted successfully!");
+        }
+      };
     </script>
   </body>
 </html>
