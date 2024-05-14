@@ -121,6 +121,7 @@ html {
 
 #header {
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* -- header area end -- */
@@ -291,7 +292,6 @@ html {
   outline: none;
   color: #fff;
   font-size: 2.2rem;
-  text-transform: capitalize;
   font-family: "Inter", sans-serif;
   padding: 0.8rem 2rem;
   margin-bottom: 3rem;
@@ -483,6 +483,7 @@ html {
 
 #mb_header {
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .menu_item_mb {
@@ -532,6 +533,24 @@ a.privacy {
 
 a.privacy:hover {
   opacity: 0.7;
+}
+
+.policy_wrapper {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.policy_wrapper h2 {
+  font-size: 7rem;
+  margin-bottom: 4rem;
+}
+
+.policy_wrapper p {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
 }
 
 /* -- mb_header area end -- */
